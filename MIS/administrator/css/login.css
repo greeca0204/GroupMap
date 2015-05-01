@@ -1,0 +1,86 @@
+@import url("admin.css");
+#container {
+	width:100%;
+	margin:0 auto;
+	background-color:#1a416f;
+}
+#layout {
+	width:1003px;
+	margin:0 auto;
+}
+#header {
+	margin:0 auto;
+	width:993px;
+	height:36px;
+	line-height:36px;
+	color:#c3d3e4;
+	border-top:10px solid #00b2e8;
+	text-indent:2em;
+}
+#body {
+	margin:0 auto;
+	width:983px;
+	padding:5px;
+	background-color:#fff;
+}
+#body .body_content {
+	width:973px;
+	padding:5px;
+	background-color:#f1f5fa;
+	height:465px;
+}
+#footer {
+	margin:0 auto;
+	width:983px;
+	height:50px;
+	padding:15px 5px 5px 5px;
+	color:#c3d3e4;
+}
+#footer .copyright {
+	float:left;
+	font-size:0.83em;font-family:Verdana,Helvetica,Arial,sans-serif;
+}
+#footer .siteinfo {
+	float:right;
+	text-align:right;
+}
+
+#login_layout {
+	width:500px;
+	margin:0 auto;
+	color:#444;
+}
+#login_layout .input_field {
+	padding:3px 0 0 3px;
+	height:24px;
+	line-height:24px;
+	width:235px;
+	border-left:1px solid #999;
+	border-top:1px solid #999;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	background-color:#fff;
+}
+#login_layout #username,#login_layout #password {
+	width:180px; 
+	margin-left:5px; 
+	border:0;
+}
+#login_layout #username:focus ,#login_layout #password:focus{
+	border:1px solid #f00;
+	background:#f1f5fa;
+	color:#666;
+}
+.focus{
+	border:1px solid #f00;
+	background:#f1f5fa;
+	color:#666;
+}
+#login_layout .login_title {color:#0099cc; font-size:14px; font-weight:bold;}
+#login_layout .submit_div {float:right; padding-right:40px;}
+#login_layout .left_field {float:left; width:280px;}
+#login_layout .right_field {float:right; width:148px; height:120px; padding-left:55px; border-left:1px solid #d3e8f2; }
+#login_error_msg {padding-top:16px;}
+.blank116 {height:116px; font-size:1px; margin:0; padding:0; overflow:hidden;}
+.blank30 {height:30px; font-size:1px; margin:0; padding:0; overflow:hidden;}
+.blank10 {height:10px; font-size:1px; margin:0; padding:0; overflow:hidden;}

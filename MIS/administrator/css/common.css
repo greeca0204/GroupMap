@@ -1,0 +1,72 @@
+
+.jangle_layout {
+	width:100%;
+	margin:0 auto;
+	background-color:#069;
+}
+/*宽度w=1003*/
+.jangle_layout .layout {
+	margin:0 auto;
+}
+/*宽度w-10=993*/
+.jangle_layout .layout .header {
+	margin:0 auto;
+	height:36px;
+	line-height:36px;
+	color:#c3d3e4;
+	border-top:10px solid #00b2e8;
+	text-indent:2em;
+}
+/*宽度w-20=983*/
+.jangle_layout .layout .body {
+	margin:0 auto;
+	padding:5px;
+	background-color:#fff;
+}
+/*宽度w-30=973*/
+.jangle_layout .layout .body .body_content {
+	padding:5px;
+	background-color:#f1f5fa;
+	height:490px;
+}
+/*宽度w-20=983*/
+.jangle_layout .layout .footer {
+	margin:0 auto;
+	padding:15px 5px 0px 5px;
+	color:#c3d3e4;
+}
+.jangle_layout .layout .footer .copyright {
+	float:left;
+	font-size:0.83em;font-family:Verdana,Helvetica,Arial,sans-serif;
+}
+.jangle_layout .layout .footer .siteinfo {
+	float:right;
+	text-align:right;
+}
+
+.jangle_layout .layout .footer a,
+.jangle_layout .layout .footer a:link,
+.jangle_layout .layout .footer a:visited,
+.jangle_layout .layout .footer a:active {
+	color: #c3d3e4;
+	text-decoration: none;
+}
+.jangle_layout .layout .footer a:hover {
+	color: #c3d3e4;
+	text-decoration: underline;
+}
+
+
+/*分页*/
+.pagesplit{margin-bottom:5px;margin-left:10px;padding:0;padding-right:3px;}
+.pagesplit:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.pagesplit li{display:inline}
+.pagesplit li span,.pagesplit li a,.pagesplit li strong{float:right;/*分页栏居右*/display:block; padding:0 5px; height:20px; line-height:20px; border:1px solid #C6BAB5;margin-right:-1px;background:#fff; text-align:center;}
+.pagesplit li span{font-weight:bold; background:#F7F9FB;}
+.pagesplit li a:link,.pagesplit li a:visited{color:#00f;}
+.pagesplit li a:hover,.pagesplit li a:active{text-decoration:underline;background:#eee;}
+.pagesplit li a img{width:9px;height:8px; vertical-align:middle; border:0; overflow:hidden; margin-top:5px;}
+html>body .pagesplit li a img{margin-top:6px;}
+.endsplit{float:none}
+#pnum, #num {margin-left:0px;font-style:normal; border:1px #C6BAB5 solid; text-align:center; width:15px; margin-top:1px;height:12px;line-height:12px;}
+* html #pnum, * html #num { margin-top:1px;margin-left:0px; } /* margin-left:-11px;}*/

@@ -1,0 +1,42 @@
+{{include file='header.html'}}
+<form name="fmEdit" id="fmEdit" method="post" action="news.php?action=save" enctype="multipart/form-data">
+	<input type="hidden" name="nid" id="nid" value="{{$news.nid}}" />
+	<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+		<tr>
+			<td width="10%">文章标题：</td>
+			<td>
+				<input name="title" id="title" value="{{$news.title}}"  class="frminput" />
+			</td>
+		</tr>
+		<tr>
+			<td width="10%">文章作者：</td>
+			<td>
+				<input name="author" id="author" value="{{$news.author}}" class="frminput"/>
+			</td>
+		</tr>
+		<tr>
+        <tr>
+			<td width="10%">文章内容：</td>
+			<td>
+				<textarea name="content1"  id="content1" style="width:100%;height:350px;" class="frmarea">{{$news.content}}</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td width="10%">文章类别：</td>
+			<td class="sel">
+				<select name="type" id="type">
+                	{{foreach from=$classes item=classes name=classes}}
+      				<option value="{{$classes.id}}" {{if $news.type==$classes.id}}selected="selected"{{/if}}>{{$classes.classname}}</option>
+                    {{/foreach}}
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="提交">
+				<input type="reset" value="重置">
+			</td>
+		</tr>
+	</table>
+</form>
+{{include file='footer.html'}}

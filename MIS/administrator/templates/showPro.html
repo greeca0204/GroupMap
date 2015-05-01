@@ -1,0 +1,38 @@
+{{include file="header.html"}}
+<form name="fmEdit" id="fmEdit" action="product.php?action=delete" method="post">
+	<table border="0" cellpadding="0" cellspacing="0" align="center" id="tb" width="100%">
+		<tr>
+			<td align="center" valign="middle" width="50%">产品名称</td>
+            <td align="center" valign="middle" width="20%">产品类别</td>
+			<td align="center" valign="middle" width="10%">管理</td>
+			<td align="center" valign="middle" width="20%">删除</td>
+		</tr>
+		{{foreach from=$product item=product name=product}}
+		<tr>
+			<td align="center" valign="middle" width="50%">{{$product.proName}}</td>
+            <td align="center" valign="middle" width="20%">
+            	{{if $product.proType==1}}软件产品{{/if}}
+                {{if $product.proType==2}}硬件产品{{/if}}
+            </td>
+   			<td align="center" valign="middle" width="10%">
+            	<a href='product.php?action=new&id={{$product.id}}'>修改</a>
+			</td>
+			<td align="center" valign="middle" class="checkbox" width="20%">
+				<input type="checkbox" name="chk1[]" id="chk1" value="{{$product.id}}" />
+			</td>
+		</tr>
+		{{/foreach}}
+		<tr>
+			<td align="center" valign="middle" colspan="3">
+				<input type="submit" name="Submit" value="删除" />
+			</td>
+			<td align="center" valign="middle" class="checkbox" width="20%">
+				全选/全不选<input type="checkbox" name="chk2" id="chk2" />
+			</td>
+		</tr>
+		<tr>
+			<td valign="middle" colspan="4">{{$paggingbar}}</td>
+		</tr>  
+	</table>
+</form>
+{{include file="footer.html"}}

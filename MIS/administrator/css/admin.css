@@ -1,0 +1,31 @@
+* {
+	word-wrap: break-word;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: 宋体, Tahoma, Arial, sans-serif;
+	color: #000;
+	background: #0097c6;
+	line-height: 1.5em;
+}
+p, form, iframe {
+	margin:0;
+	padding:0;
+}
+a,
+a:link,
+a:visited,
+a:active {
+	color: #4F7500;
+	text-decoration: none;
+}
+a:hover {
+	color: #395500;
+	text-decoration: underline;
+}
+img{
+	border: none;
+	vertical-align: middle;
+}

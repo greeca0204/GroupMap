@@ -1,0 +1,31 @@
+{{include file='header.html'}}
+<form name="fmEdit" id="fmEdit" method="post" action="friend.php?action=save" enctype="multipart/form-data">
+	<input type="hidden" name="id" id="id" value="{{$friend.id}}" />
+	<table border="0" cellpadding="0" cellspacing="0" align="center" width="100%">
+		<tr>
+			<td width="10%">链接名称：</td>
+			<td>
+				<input name="friends" id="friends" value="{{$friend.friends}}"  class="frminput" />
+			</td>
+		</tr>
+		<tr>
+			<td width="10%">链接地址：</td>
+			<td>
+				<input name="url" id="url" value="{{$friend.url}}" class="frminput"/>
+			</td>
+		</tr>
+		<tr>
+			<td width="10%">链接logo：</td>
+			<td>
+				<input name="logo" id="logo" value="{{$friend.logo}}" class="frminput"/>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<input type="submit" value="提交">
+				<input type="reset" value="重置">
+			</td>
+		</tr>
+	</table>
+</form>
+{{include file='footer.html'}}

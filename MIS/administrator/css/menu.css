@@ -1,0 +1,68 @@
+@import url("admin.css");
+
+#janglebell {
+	width:217px;
+	height:70px;
+	background:#0097c6 url(/images/logo_sm.png) 10px 12px no-repeat;
+}
+
+#menu {
+	width:219px;
+	height:100%;
+	margin:0 auto;
+	background-color:#0097c6;
+	border-right:1px solid #00b2e8;
+	overflow:hidden;
+}
+
+#menu ul {list-style:none; width:219px; padding:0; margin:0;}
+#menu li {
+	float:left;
+	padding:0 5px;
+	overflow:hidden;
+}
+#menu li a {
+	display:block; 
+	float:left;
+	width:207px; 
+	height:30px; 
+	line-height:30px; 
+	text-indent:30px;
+	background-color:#069;
+	font-weight:bold;
+	color:#c3d3e4;
+	border-width:1px;
+	border-style:none solid solid solid;
+	border-color:#00b2e8;
+	overflow:hidden;
+}
+#menu li ul {
+	width:197px; 
+	padding: 5px;
+	float:left;
+	border-style:solid;
+	border-color:#00b2e8;
+	border-width:0 1px 1px 1px;
+	background-color:#ebf2f8;
+	overflow:hidden;
+	display:none;
+}
+#menu li ul li {margin:0; border:0; float:left; padding:0;}
+#menu li ul li a {
+	display:block;
+	float:left; 
+	width:195px; 
+	height:26px; 
+	line-height:26px; 
+	text-align:center;
+	background-color:#f8fbfe;
+	color:#666;
+	text-indent:0;
+	border:1px solid #ebf2f8;
+	font-weight:normal;
+	overflow:hidden;
+}
+#menu li ul li a:hover{
+	border:1px solid #1e4b7e;
+	background-color:#c3d3e4;
+}

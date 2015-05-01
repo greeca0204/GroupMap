@@ -1,0 +1,38 @@
+{{include file="header.html"}}
+<form name="fmEdit" id="fmEdit" action="admin.php?action=delete" method="post">
+	<table border="0" cellpadding="0" cellspacing="0" align="center" id="tb" width="100%">
+		<tr>
+			<td align="center" valign="middle" width="50%">管理员</td>
+			<td align="center" valign="middle" width="20%">审核状态</td>
+			<td align="center" valign="middle" width="10%">管理</td>
+			<td align="center" valign="middle" width="20%">删除</td>
+		</tr>
+		{{foreach from=$admin item=admin name=admin}}
+		<tr>
+			<td align="center" valign="middle" width="50%">{{$admin.username}}</td>
+			<td align="center" valign="middle" width="20%">
+			{{if $admin.checked==1}}已审核
+			{{else}}未审核{{/if}}
+			</td>
+   			<td align="center" valign="middle" width="10%">
+            	<a href='admin.php?action=new&id={{$admin.id}}'>修改</a>
+			</td>
+			<td align="center" valign="middle" class="checkbox" width="20%">
+				<input type="checkbox" name="chk1[]" id="chk1" value="{{$admin.id}}" />
+			</td>
+		</tr>
+		{{/foreach}}
+		<tr>
+			<td align="center" valign="middle" colspan="3">
+				<input type="submit" name="Submit" value="删除" />
+			</td>
+			<td align="center" valign="middle" class="checkbox" width="20%">
+				全选/全不选<input type="checkbox" name="chk2" id="chk2" />
+			</td>
+		</tr>
+		<tr>
+			<td valign="middle" colspan="4">{{$paggingbar}}</td>
+		</tr>  
+	</table>
+</form>
+{{include file="footer.html"}}
